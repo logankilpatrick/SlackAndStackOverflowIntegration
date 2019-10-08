@@ -4,6 +4,7 @@ import requests
 import sys
 
 webHookURL = sys.argv[1]
+tag = sys.argv[2]
 
 SITE = StackAPI('stackoverflow')
 
@@ -11,7 +12,7 @@ currenttime = int(time.time()) #Get current time in Unix Epcot Time
 
 thirtyMinsAgo = currenttime - 1800 #rewind 30 minutes since that's the frequency the job run's at. 
 
-posts = SITE.fetch('questions', fromdate = thirtyMinsAgo, todate = currenttime, tagged = 'Julia')
+posts = SITE.fetch('questions', fromdate = thirtyMinsAgo, todate = currenttime, tagged = tag)
 
 headers = {
     'Content-type': 'application/json',
