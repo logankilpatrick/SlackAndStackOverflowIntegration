@@ -19,7 +19,7 @@ jobs:
     - name: Run check of pwd
       run: pwd
     - name: Run a one-line script
-      run: python ./.github/workflows/StackOverflow.py ${{ secrets.JuliaLangSlackWebHook }} NameOfStackOverflowTag
+      run: python ./.github/workflows/StackOverflow.py ${{ secrets.SlackWebHook }} NameOfStackOverflowTag
       
 # We can use git commands to log if FireBase does not pan out.       
 #     - name: Run git add check
