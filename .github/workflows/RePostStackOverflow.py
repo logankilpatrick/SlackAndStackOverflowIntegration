@@ -4,6 +4,7 @@ import requests
 import sys
 
 webHookURL = sys.argv[1]
+tag = sys.argv[2]
 
 SITE = StackAPI('stackoverflow')
 
@@ -11,7 +12,7 @@ yesterday = int(time.time()) - 86400  #start from 1 day ago.
 
 eightDaysAgo = (yesterday - 604800) #rewind 70 days (from 1 day ago) in minutes since that's the frequency the job run's at. 
 
-posts = SITE.fetch('questions', fromdate = eightDaysAgo, todate = yesterday, tagged = 'Julia')
+posts = SITE.fetch('questions', fromdate = eightDaysAgo, todate = yesterday, tagged = tag)
 
 headers = {
     'Content-type': 'application/json',
