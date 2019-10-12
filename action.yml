@@ -6,3 +6,7 @@ description: Ping Stack Overflow for new questiosn of a specific tag and then se
 
 using: 'docker'
 image: 'Dockerfile'
+
+branding:
+  icon: 'cast'  
+  color: 'purple'
