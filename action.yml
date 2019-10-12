@@ -4,8 +4,9 @@ author: Logan Kilpatrick
 
 description: Ping Stack Overflow for new questiosn of a specific tag and then send the links to slack. 
 
-using: 'docker'
-image: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 
 branding:
   icon: 'cast'  
