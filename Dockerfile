@@ -5,8 +5,6 @@ LABEL "com.github.actions.description"="Monitor a tag on Stack Overflow and then
 LABEL "com.github.actions.icon"="cast"
 LABEL "com.github.actions.color"="6f42c1"
 
-ADD my_script.py /
-
 RUN pip install stackapi
 
 CMD [ "python", "./.github/workflows/StackOverflow.py ${{ secrets.SlackWebHook }} Julia" ]
