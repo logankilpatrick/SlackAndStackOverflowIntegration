@@ -2,7 +2,7 @@ name: SendToSlack
 
 author: Logan Kilpatrick
 
-description: Ping Stack Overflow for new questiosn of a specific tag and then send the links to slack. 
+description: Pings Stack Overflow for new questions of a specific tag and then sends the links to slack. 
 
 runs:
   using: 'docker'
