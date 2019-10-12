@@ -10,5 +10,6 @@ ADD my_script.py /
 RUN pip install stackapi
 
 CMD [ "python", "./.github/workflows/StackOverflow.py ${{ secrets.SlackWebHook }} Julia" ]
+ENTRYPOINT ["./.github/workflows/StackOverflow.py"]
 
 #TODO: Replace Julia with NameOfStackOverflowTag
