@@ -8,6 +8,6 @@ LABEL "com.github.actions.color"="6f42c1"
 RUN pip install stackapi
 
 CMD [ "python", "./.github/workflows/StackOverflow.py ${{ secrets.SlackWebHook }} Julia" ]
-ENTRYPOINT ["./.github/workflows/StackOverflow.py"]
+ENTRYPOINT ["/StackOverflow.py"]
 
 #TODO: Replace Julia with NameOfStackOverflowTag
