@@ -15,17 +15,19 @@ Every even numbered day of the month at 11 AM UTC time, un-answered questions wi
 4) Repeat step 3 above except with `RePostSlackIntegration.yml`. 
 5) You should be all set! Enjoy the integration.
 
+It's also worth noting that you can configure the event that triggers the action to run in both `SlackIntegration.yml` and `RePostSlackIntegration.yml`. 
+
 ## Current state
 This repo is very much still WIP. All feeedback / suggestions / feature requests are welcome! Just open an issue on this repo. 
 
 ## Resources
-YML Check: https://yamlchecker.com
+[YML Check](https://yamlchecker.com)
 
-Python SO API Package: https://stackapi.readthedocs.io/en/latest/user/complex.html
+[Python SO API Package](https://stackapi.readthedocs.io/en/latest/user/complex.html)
 
-Curl to Python conversion: https://curl.trillworks.com/#python
+[Curl to Python conversion](https://curl.trillworks.com/#python)
 
-Slack Message formatting check: https://api.slack.com/docs/messages/builder?msg=%7B%22text%22%3A%20%22This%20is%20a%20line%20of%20text.%5CnAnd%20this%20is%20another%20one.%22%7D
+[Slack Message formatting](https://api.slack.com/docs/messages/builder?msg=%7B%22text%22%3A%20%22This%20is%20a%20line%20of%20text.%5CnAnd%20this%20is%20another%20one.%22%7D)
 
-GitHub Action Scheduling Docs: https://help.github.com/en/articles/events-that-trigger-workflows#scheduled-events-schedule
+[GitHub Action Scheduling Docs](https://help.github.com/en/articles/events-that-trigger-workflows#scheduled-events-schedule)
 
