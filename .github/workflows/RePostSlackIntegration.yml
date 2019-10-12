@@ -5,7 +5,12 @@ name: RePostToSlack
 #     - cron:  '0 11 2-30/2 * *' 
 #     # Runs on all even number days at 11 am UTC! 
     
-on: push #Used for Debug
+# on: push #Used for Debug
+
+on:
+  schedule:
+    - cron:  '0 0 1 1 *' 
+    # Runs once a year at 11 am. 
 
 jobs:
   build:
